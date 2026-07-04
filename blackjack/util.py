@@ -1,4 +1,5 @@
 import constant
+import random
 
 
 def calculate_hand(hand):
@@ -26,3 +27,8 @@ def check_for_ace(hand):
         if card == "A":
             return True
     return False
+
+
+def deal_card():
+    """Returns a random card from the card list."""
+    return random.choice(constant.CARD_LIST)
